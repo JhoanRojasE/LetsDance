@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="registro-estudiantes.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Estudiantes</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre del Estudiante:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="documento">Documento de Identidad:</label>
+                <input type="text" id="documento" name="documento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emergencia">Número de Emergencia:</label>
+                <input type="tel" id="emergencia" name="emergencia" pattern="[0-9]{10}" placeholder="Ej: 3001234567" required>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tutor">Nombre del Tutor:</label>
+                <input type="text" id="tutor" name="tutor" required>
+            </div>
+
+            <button type="submit">Registrar Estudiante</button>
+        </form>
+    </div>
+</body>
+</html>
